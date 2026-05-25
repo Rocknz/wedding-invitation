@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="정락준 ❤️ 강한숙" />
+    <meta property="og:description" content="축하해주셔서 감사합니다." />
+    <title>정락준 ❤️ 강한숙</title>
+    <style>
+      :root {
+        --ink: #2f2926;
+        --muted: #776862;
+        --paper: #fffaf6;
+        --panel: rgba(255, 255, 255, 0.86);
+        --rose: #c95868;
+        --sage: #7e9187;
+        --line: #eadbd4;
+        --shadow: rgba(57, 41, 35, 0.14);
+        background: var(--paper);
+        color: var(--ink);
+        font-family:
+          "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      main {
+        min-height: 100vh;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        padding: 28px 18px;
+        background:
+          linear-gradient(120deg, rgba(201, 88, 104, 0.1), transparent 38%),
+          linear-gradient(300deg, rgba(126, 145, 135, 0.18), transparent 40%),
+          var(--paper);
+      }
+
+      .card {
+        position: relative;
+        width: min(100%, 560px);
+        min-height: 520px;
+        display: grid;
+        place-items: center;
+        padding: 34px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: var(--panel);
+        box-shadow: 0 24px 70px var(--shadow);
+        overflow: hidden;
+      }
+
+      .card::before,
+      .card::after {
+        content: "";
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        border: 1px solid rgba(201, 88, 104, 0.18);
+        transform: rotate(45deg);
+      }
+
+      .card::before {
+        top: -92px;
+        left: -92px;
+      }
+
+      .card::after {
+        right: -92px;
+        bottom: -92px;
+        border-color: rgba(126, 145, 135, 0.24);
+      }
+
+      .content {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        padding: 54px 26px;
+        border: 1px solid rgba(234, 219, 212, 0.82);
+        text-align: center;
+      }
+
+      .eyebrow {
+        margin: 0 0 24px;
+        color: var(--sage);
+        font-size: 13px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      .names {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        margin: 0;
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 1.45;
+      }
+
+      .heart {
+        color: var(--rose);
+        font-size: 26px;
+        line-height: 1;
+      }
+
+      .divider {
+        width: 54px;
+        height: 1px;
+        margin: 28px auto;
+        background: linear-gradient(90deg, transparent, var(--rose), transparent);
+      }
+
+      .message {
+        margin: 0;
+        color: var(--ink);
+        font-size: 24px;
+        line-height: 1.75;
+      }
+
+      .closing {
+        margin: 28px 0 0;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.8;
+      }
+
+      @media (max-width: 420px) {
+        main {
+          padding: 16px;
+        }
+
+        .card {
+          min-height: 500px;
+          padding: 18px;
+        }
+
+        .content {
+          padding: 44px 18px;
+        }
+
+        .names {
+          gap: 10px;
+          font-size: 28px;
+        }
+
+        .heart {
+          font-size: 22px;
+        }
+
+        .message {
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main aria-labelledby="thank-you-title">
+      <section class="card">
+        <div class="content">
+          <p class="eyebrow">Thank you for celebrating with us</p>
+          <h1 id="thank-you-title" class="names">
+            <span>정락준</span>
+            <span class="heart" aria-label="heart">❤️</span>
+            <span>강한숙</span>
+          </h1>
+          <div class="divider"></div>
+          <p class="message">축하해주셔서 감사합니다.</p>
+          <p class="closing">보내주신 마음 오래도록 간직하겠습니다.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
